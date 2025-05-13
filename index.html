@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Mentor</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <img src="" class="header-content__logo" alt="">3>MyMentor
+        <nav>
+          <ul>
+            <li class="nav-item"><a class="nav-link" href="">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Mentorship</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Clients</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Become a Mentor</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-content__last">
+          <button class="btn-logIn">Log In</button>
+          <button class="btn-signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="main-content">
+        <div class="main-change__pages">
+          <a id="firstLink" href="">Mentee</a>
+          <a id="secondLink" href="">Mentor</a>
+        </div>
+        <div id="firstPage" class="main-content__first">
+          <div class="main-change__information">
+            <h1>Reach your goals faster with expert mentors</h1>
+            <p>Accelerate your professional growth with 1:1 expert guidance of <span>3 728+</span>
+              mentors in our community.</p>
+            <button>Find a Mentor</button>
+          </div>
+        </div>
+        <div id="secondPage" class="main-content__second">
+          <div class="main-change__information">
+            <h1>Your next chapter, made possible by mentoring</h1>
+            <p>Build confidence as a leader, grow your network, and define your legacy.</p>
+            <button>Become a Mentor</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why choose MyMentor</h2>
+        <p>All the tools for effective learning in one place</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Expert mentors</h3>
+          <p>Choose a mentor from the IT industry with real-world work experience</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <h3>Personal plan</h3>
+          <p>Clear step-by-step development plan with progress tracking</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Knowledge base</h3>
+          <p>Organize all useful resources in one place.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-title">
+        <h2>How It Works</h2>
+        <p>Follow these simple steps to get started with MyMentor</p>
+      </div>
+      <div class="steps">
+        <div class="step-1">
+          <a href="#mentor-page">
+            <div class="step-number">1</div>
+            <h3>Choose a Mentor</h3>
+            <p>Select from our roster of experienced mentors based on your interests and goals</p>
+          </a>
+        </div>
+        <div class="step-2">
+          <a href="#goal-page">
+            <div class="step-number">2</div>
+            <h3>Set Your Goal</h3>
+            <p>Define what you want to achieve, like "Learn JavaScript Basics"</p>
+          </a>
+        </div>
+        <div class="step-3">
+          <a href="#plans-page">
+            <div class="step-number">3</div>
+            <h3>Track Tasks</h3>
+            <p>Complete suggested tasks and mark your progress as you advance</p>
+          </a>
+        </div>
+        <div class="step-4">
+          <a href="#resources-page">
+            <div class="step-number">4</div>
+            <h3>Save Resources</h3>
+            <p>Add useful links and notes to build your personal knowledge base</p>
+          </a>
+        </div>
+        <div class="step-5">
+          <a href="#celebrate-page">
+            <div class="step-number">5</div>
+            <h3>Get Certified!</h3>
+            <p>Lock in your achievement with verifiable credentials</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mentors" id="mentor-page" style="background-color: white;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Наши наставники</h2>
+        <p>Профессионалы из IT-индустрии, которые помогут вам в обучении</p>
+      </div>
+      <div class="mentors-grid">
+
+        <div class="mentor-card" id="frontendMentor" data-mentor="frontend">
+          <div class="mentor-image">
+            <img src="images/mentor-m.jpg" alt="Алексей Петров" loading="lazy">
+            <div class="mentor-badge">JS Expert</div>
+          </div>
+          <div class="mentor-info">
+            <h3>Алексей Петров</h3>
+            <p class="mentor-spec">Frontend Developer</p>
+            <div class="mentor-stats">
+              <span>5+ лет опыта</span>
+              <span>87% успеха</span>
+            </div>
+            <button class="select-mentor-btn">Выбрать</button>
+          </div>
+          <div class="mentor-hover">
+            <h4>Специализация:</h4>
+            <ul>
+              <li>React/Redux</li>
+              <li>TypeScript</li>
+              <li>Performance</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mentor-card" id="backendMentor" data-mentor="backend">
+          <div class="mentor-image">
+            <img src="images/mentor2-w.jpg" alt="Мария Сидорова" loading="lazy">
+            <div class="mentor-badge">Python Pro</div>
+          </div>
+          <div class="mentor-info">
+            <h3>Мария Сидорова</h3>
+            <p class="mentor-spec">Backend Developer</p>
+            <div class="mentor-stats">
+              <span>6+ лет опыта</span>
+              <span>92% успеха</span>
+            </div>
+            <button class="select-mentor-btn">Выбрать</button>
+          </div>
+          <div class="mentor-hover">
+            <h4>Специализация:</h4>
+            <ul>
+              <li>Django/Flask</li>
+              <li>PostgreSQL</li>
+              <li>Data Science</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mentor-card" id="designMentor" data-mentor="design">
+          <div class="mentor-image">
+            <img src="images/mentor3-m.jpg" alt="Иван Иванов" loading="lazy">
+            <div class="mentor-badge">UX Guru</div>
+          </div>
+          <div class="mentor-info">
+            <h3>Иван Иванов</h3>
+            <p class="mentor-spec">UX/UI Designer</p>
+            <div class="mentor-stats">
+              <span>4+ лет опыта</span>
+              <span>85% успеха</span>
+            </div>
+            <button class="select-mentor-btn">Выбрать</button>
+          </div>
+          <div class="mentor-hover">
+            <h4>Специализация:</h4>
+            <ul>
+              <li>Figma/Adobe XD</li>
+              <li>User Research</li>
+              <li>Prototyping</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="goal-page" class="page">
+    <div class="container-goal">
+
+
+      <div class="main-content">
+        <div class="header-goal">
+          <h1>Set your goals</h1>
+          <button class="btn btn-primary" id="newGoalBtn">
+            <i class="fas fa-plus"></i> New Goal
+          </button>
+        </div>
+
+
+        <div class="tabs">
+          <div class="tab active" data-tab="active">Active</div>
+          <div class="tab done" data-tab="done">Done</div>
+        </div>
+
+        <!-- In process page -->
+        <div class="goals-list" id="activeGoals"></div>
+
+        <!-- Done page -->
+        <div class="goals-list" id="doneGoals" style="display: none;"></div>
+      </div>
+    </div>
+
+    <!-- block that shows when you click NewGoal -->
+    <div class="modal" id="newGoalModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Create New Goal</h2>
+          <button class="close-btn" id="closeModalBtn">&times;</button>
+        </div>
+        <form id="goalForm">
+          <div class="form-group">
+            <label for="goalTitle">Title</label>
+            <input type="text" id="goalTitle" class="form-control" placeholder="JavaScript" required>
+          </div>
+          <div class="form-group">
+            <label for="goalDeadline">Deadline</label>
+            <input type="date" id="goalDeadline" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="goalDescription">Description</label>
+            <textarea id="goalDescription" class="form-control" rows="4"
+              placeholder="Describe the your goal, scope, and requirements..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Save Goal</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- block that shows when you click deleteBtn -->
+    <div class="confirmation-modal" id="deleteModal">
+      <div class="confirmation-content">
+        <h3>Delete Goal</h3>
+        <p>Are you sure you want to delete this goal? This action cannot be undone.</p>
+        <div class="confirmation-buttons">
+          <button class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+          <button class="btn" id="cancelDeleteBtn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans-page" class="page">
+
+  </section>
+
+
+  <section id="resources-page" class="page">
+    <h2>Полезные ресурсы:</h2>
+    <input type="text" id="title-input" placeholder="Title...">
+    <input type="text" id="url-input" placeholder="https://example.com">
+    <button id="input-btn">Save resources</button>
+    <button id="delete-btn">Delete all</button>
+    <ul id="ul-el">
+    </ul>
+    <script src="index.js"></script>
+    <ul id="resources-list"></ul>
+  </section>
+
+
+  <section id="celebrate-page" class="page"></section>
+
+
+  <footer>
+    <p>&copy; 2025 MyMentor</p>
+  </footer>
+</body>
+
+</html>
