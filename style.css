@@ -43,6 +43,13 @@ body {
     align-items: center;
     justify-content: space-between;
 
+    .burger-menu {
+      display: none;
+      cursor: pointer;
+      font-size: 24px;
+      padding: 15px;
+    }
+
     ul {
       display: flex;
       align-items: safe center;
@@ -100,6 +107,7 @@ main {
     justify-content: center;
     align-items: center;
     max-width: 1237px;
+    margin-top: -80px;
 
     .main-content {
       display: flex;
@@ -150,7 +158,7 @@ main {
       }
 
       button:hover {
-        background-color: var(--cyan);
+        background-color: var(--primary);
       }
 
     }
@@ -759,21 +767,21 @@ textarea.form-control {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #5f9341;
+    border: 1px solid var(--primary);
     margin-bottom: 4px;
   }
 
   button {
-    background: #5f9341;
+    background: var(--primary);
     color: white;
     padding: 10px 20px;
-    border: 1px solid #5f9341;
+    border: 1px solid var(--primary);
     font-weight: bold;
   }
 
   #delete-btn {
     background: white;
-    color: #5f9341;
+    color: var(--primary);
   }
 
   ul {
@@ -787,7 +795,7 @@ textarea.form-control {
   }
 
   a {
-    color: #5f9341;
+    color: var(--primary);
   }
 }
 
@@ -796,12 +804,12 @@ footer {
   display: flex;
 
   p {
-     margin: 0 auto;
+    margin: 0 auto;
   }
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     padding: 20px;
   }
@@ -810,21 +818,14 @@ footer {
     flex-direction: column;
     align-items: flex-start;
 
-    ul {
-      flex-direction: column;
-      width: 100%;
-      margin: 20px 0;
-
-      li {
-        margin: 10px 0;
-      }
+    li {
+      font-size: 12px;
+      margin: 10px 0;
     }
+  }
 
-    .header-content__last {
-      width: 100%;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
+  .header-content__last {
+    opacity: 0;
   }
 
   main .container .main-content {
@@ -851,7 +852,7 @@ footer {
     padding: 0 20px;
   }
 
- 
+
   .how-it-works {
     height: auto;
     padding: 40px 20px;

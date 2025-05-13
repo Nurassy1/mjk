@@ -15,16 +15,21 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <img src="" class="header-content__logo" alt="">3>MyMentor
-        <nav>
-          <ul>
-            <li class="nav-item"><a class="nav-link" href="">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Mentorship</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Clients</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Become a Mentor</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
-          </ul>
-        </nav>
+        <h2 class="header-content__logo">MyMentor</h2>
+
+        <div class="nav-container">
+          <div class="burger-menu"><i class="fas fa-bars"></i></div>
+
+          <nav>
+            <ul id="nav-menu">
+              <li class="nav-item"><a class="nav-link" href="">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Mentorship</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Clients</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Become a Mentor</a></li>
+              <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="header-content__last">
           <button class="btn-logIn">Log In</button>
@@ -142,8 +147,8 @@
   <section class="mentors" id="mentor-page" style="background-color: white;">
     <div class="container">
       <div class="section-header">
-        <h2>Наши наставники</h2>
-        <p>Профессионалы из IT-индустрии, которые помогут вам в обучении</p>
+        <h2>Our Mentors</h2>
+        <p>Professionals from IT-industry who can help to you</p>
       </div>
       <div class="mentors-grid">
 
@@ -153,16 +158,16 @@
             <div class="mentor-badge">JS Expert</div>
           </div>
           <div class="mentor-info">
-            <h3>Алексей Петров</h3>
+            <h3>Nurlan Bekov</h3>
             <p class="mentor-spec">Frontend Developer</p>
             <div class="mentor-stats">
-              <span>5+ лет опыта</span>
-              <span>87% успеха</span>
+              <span>5+ years experience</span>
+              <span>87% success</span>
             </div>
-            <button class="select-mentor-btn">Выбрать</button>
+            <button class="select-mentor-btn">Select</button>
           </div>
           <div class="mentor-hover">
-            <h4>Специализация:</h4>
+            <h4>Specicialization:</h4>
             <ul>
               <li>React/Redux</li>
               <li>TypeScript</li>
@@ -177,16 +182,16 @@
             <div class="mentor-badge">Python Pro</div>
           </div>
           <div class="mentor-info">
-            <h3>Мария Сидорова</h3>
+            <h3>Aigerim Serik</h3>
             <p class="mentor-spec">Backend Developer</p>
             <div class="mentor-stats">
-              <span>6+ лет опыта</span>
-              <span>92% успеха</span>
+              <span>6+ years experience</span>
+              <span>92% success</span>
             </div>
-            <button class="select-mentor-btn">Выбрать</button>
+            <button class="select-mentor-btn">Select</button>
           </div>
           <div class="mentor-hover">
-            <h4>Специализация:</h4>
+            <h4>Specicialization:</h4>
             <ul>
               <li>Django/Flask</li>
               <li>PostgreSQL</li>
@@ -201,16 +206,16 @@
             <div class="mentor-badge">UX Guru</div>
           </div>
           <div class="mentor-info">
-            <h3>Иван Иванов</h3>
+            <h3>Ivan Ivanov</h3>
             <p class="mentor-spec">UX/UI Designer</p>
             <div class="mentor-stats">
-              <span>4+ лет опыта</span>
-              <span>85% успеха</span>
+              <span>4+ years experience</span>
+              <span>85% success</span>
             </div>
-            <button class="select-mentor-btn">Выбрать</button>
+            <button class="select-mentor-btn">Select</button>
           </div>
           <div class="mentor-hover">
-            <h4>Специализация:</h4>
+            <h4>Specicialization:</h4>
             <ul>
               <li>Figma/Adobe XD</li>
               <li>User Research</li>
@@ -293,7 +298,7 @@
 
 
   <section id="resources-page" class="page">
-    <h2>Полезные ресурсы:</h2>
+    <h2>Useful resources:</h2>
     <input type="text" id="title-input" placeholder="Title...">
     <input type="text" id="url-input" placeholder="https://example.com">
     <button id="input-btn">Save resources</button>

@@ -1,3 +1,41 @@
+// Burger Menu
+  document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.querySelector('.burger-menu');
+            const navMenu = document.getElementById('nav-menu');
+            
+          
+            burgerMenu.addEventListener('click', function() {
+                navMenu.classList.toggle('show');
+                
+               
+                if (navMenu.classList.contains('show')) {
+                    burgerMenu.innerHTML = '<i class="fas fa-times"></i>';
+                } else {
+                    burgerMenu.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+            
+            
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 767) {
+                        navMenu.classList.remove('show');
+                        burgerMenu.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                });
+            });
+            
+         
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 767) {
+                    navMenu.classList.remove('show');
+                    burgerMenu.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+
 const firstPage = document.getElementById('firstPage')
 const secondPage = document.getElementById('secondPage')
 const firstLink = document.getElementById('firstLink')
@@ -310,7 +348,7 @@ function showMentorPlan(mentorIndex) {
   
   planPage.innerHTML = `
     <div class="mentor-plan">
-      <h2>План обучения от ${mentor.name}</h2>
+      <h2>Plan Of Education ${mentor.name}</h2>
       <p class="specialization">${mentor.specialization}</p>
       <div class="tasks-container">
         ${tasksHTML}
